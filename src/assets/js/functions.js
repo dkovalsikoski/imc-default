@@ -96,7 +96,7 @@ function carregarLocalStorage(){
 function deletarLinha(indice){
   let pessoas = JSON.parse(localStorage.getItem("listaIMC"));
   pessoas.splice(indice, 1);
-  localStorage.setItem("listaIMC", JSON.stringify(pessoa));
+  localStorage.setItem("listaIMC", JSON.stringify(pessoas));
   carregarLocalStorage();
 }
 
